@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chiroptera Store</title>
+</head>
+<body>
+<h2>Generar Recibo</h2>
+
+<form action="/generar" method="post">
+    Cliente: <input name="cliente"><br>
+    Teléfono: <input name="telefono"><br>
+    Dirección: <input name="direccion"><br>
+    Nº Recibo: <input name="recibo"><br>
+    Comisión: <input name="comision"><br><br>
+
+    <h3>Productos</h3>
+    <input name="producto[]" placeholder="Producto">
+    <input name="cantidad[]" placeholder="Cantidad">
+    <input name="precio[]" placeholder="Precio"><br><br>
+
+    <button type="submit">Generar PDF</button>
+</form>
+</body>
+</html>
