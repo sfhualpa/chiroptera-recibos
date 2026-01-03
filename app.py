@@ -139,7 +139,7 @@ def index():
         tabla = Table(tabla_datos, colWidths=[8*cm, 3*cm, 3.5*cm, 3.5*cm])
 
         tabla.setStyle(TableStyle([
-            ("BACKGROUND", (0,0), (-1,0), colors.HexColor("#BF4A34")),
+            ("BACKGROUND", (0,0), (-1,0), colors.HexColor("#D1DD1D")),
             ("TEXTCOLOR", (0,0), (-1,0), colors.white),
             ("ALIGN", (0,0), (-1,-1), "CENTER"),
             ("VALIGN", (0,0), (-1,-1), "MIDDLE"),
@@ -168,8 +168,7 @@ def index():
         # TÉRMINOS
         # ======================
         terminos = (
-            "El tiempo estimado de entrega de los pedidos es de 22 a 35 días calendario, "
-            "pudiendo extenderse hasta un máximo de 50 días por causas ajenas a nuestra gestión..."
+            "El tiempo estimado de entrega de los pedidos es de 22 a 30 días calendario, pudiendo extenderse hasta un máximo de 50 días por causas ajenas a nuestra gestión, tales como retrasos en aduanas o inconvenientes en el transporte internacional. En caso de pérdida del pedido durante el proceso de envío, Chiroptera Store se compromete a realizar las gestiones necesarias para la devolución del importe pagado o la reposición del producto, conforme a las políticas de las tiendas proveedoras. La empresa actúa exclusivamente como intermediaria en la compra, transporte y entrega de los productos seleccionados por el cliente, por lo que no asume responsabilidad sobre características como talla, color, calidad, diseño u otras especificaciones del artículo. Las tarifas aplicables son de USD 3.50 por libra; para pedidos superiores a USD 50.00, se aplicará una tarifa única de USD 10.00. Los pedidos que superen USD 400,00 estarán sujetos a costos adicionales por importación bajo modalidades especiales de transporte, determinados según las tarifas de la empresa transportista. La cobertura de entrega incluye las ciudades de Loja, Yantzaza, Panguintza, Zumbi y El Pangui; cualquier entrega fuera de estas zonas implicará cargos adicionales. Al realizar un pedido, el cliente declara conocer y aceptar estas condiciones."
         )
 
         elementos.append(Paragraph("TÉRMINOS Y CONDICIONES", subtitulo_style))
